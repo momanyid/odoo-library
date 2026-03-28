@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Demo Authors -->
+    <record id="author_tolkien" model="library.author">
+        <field name="name">J.R.R. Tolkien</field>
+        <field name="email">tolkien@example.com</field>
+        <field name="biography">British author and philologist, best known for The Hobbit and The Lord of the Rings.</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="author_asimov" model="library.author">
+        <field name="name">Isaac Asimov</field>
+        <field name="email">asimov@example.com</field>
+        <field name="biography">American writer and professor of biochemistry, known for science fiction and popular science books.</field>
+        <field name="active">True</field>
+    </record>
+
+    <!-- Demo Books -->
+    <record id="book_hobbit" model="library.book">
+        <field name="title">The Hobbit</field>
+        <field name="isbn">978-0547928227</field>
+        <field name="author_id" ref="author_tolkien"/>
+        <field name="genre">fiction</field>
+        <field name="publish_date">1937-09-21</field>
+        <field name="available_copies">3</field>
+        <field name="state">available</field>
+    </record>
+
+    <record id="book_foundation" model="library.book">
+        <field name="title">Foundation</field>
+        <field name="isbn">978-0553293357</field>
+        <field name="author_id" ref="author_asimov"/>
+        <field name="genre">science</field>
+        <field name="publish_date">1951-06-01</field>
+        <field name="available_copies">2</field>
+        <field name="state">available</field>
+    </record>
+
+    <!-- Demo Members -->
+    <record id="member_john" model="library.member">
+        <field name="name">John Doe</field>
+        <field name="phone">+1234567890</field>
+        <field name="email">john@example.com</field>
+        <field name="join_date">2026-01-15</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="member_jane" model="library.member">
+        <field name="name">Jane Smith</field>
+        <field name="phone">+0987654321</field>
+        <field name="email">jane@example.com</field>
+        <field name="join_date">2026-02-10</field>
+        <field name="active">True</field>
+    </record>
+</odoo>

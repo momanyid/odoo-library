@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Top-level app menu -->
+    <menuitem id="menu_library_root" name="Library" sequence="10"/>
+
+    <!-- Sub-menus -->
+    <menuitem id="menu_library_books"
+              name="Books"
+              parent="menu_library_root"
+              action="anqad_library_david.action_library_book"
+              sequence="1"/>
+
+    <menuitem id="menu_library_authors"
+              name="Authors"
+              parent="menu_library_root"
+              action="anqad_library_david.action_library_author"
+              sequence="2"/>
+
+    <menuitem id="menu_library_members"
+              name="Members"
+              parent="menu_library_root"
+              action="anqad_library_david.action_library_member"
+              sequence="3"/>
+
+    <menuitem id="menu_library_borrows"
+              name="Borrow Transactions"
+              parent="menu_library_root"
+              action="anqad_library_david.action_library_borrow"
+              sequence="4"/>
+
+</odoo>

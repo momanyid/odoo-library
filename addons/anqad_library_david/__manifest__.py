@@ -1,0 +1,20 @@
+{
+    'name': 'Anqad Library',
+    'version': '19.0.1.0.0',
+    'author': 'Anqad Systems',
+    'category': 'Library',
+    'depends': ['base', 'mail'],
+    'data': [
+        'data/sequences.xml',
+        'data/cron.xml',
+        'security/ir.model.access.csv',
+        'views/author_views.xml',
+        'views/book_views.xml',
+        'views/member_views.xml',
+        'views/borrow_views.xml',
+        'views/menu.xml',
+    ],
+    'installable': True,
+    'application': True,
+    'demo': ['demo/demo.xml'],
+}
